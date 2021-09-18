@@ -1,0 +1,13 @@
+{
+    "attributes" : [ {
+      "trait_type" : "HacktheNorth",
+      "value" : "3D Render"
+    }, 
+    {
+      "trait_type" : "Rendered Images",
+      "value" : "LEGO Pencil Case"
+    } ],
+    "description" : "Emerson's LEGO pencil case, 42",
+    "image" : "https://gateway.pinata.cloud/ipfs/Qmd7zGnpaCnLqKBzenKLY2Uz1URk4oJgK6hCqaQKpyK61P",
+    "name" : "PencilCase"
+}
