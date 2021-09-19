@@ -14,11 +14,11 @@ function setIFSP (IpfsHash)
     IPFS = IpfsHash;
 }
 const fs = require('fs');
-const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/image (8).png');
+const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/fruits_baskets_play.png');
 const options = {
     pinataMetadata: {
-        name: "Chamath_why",
-        description: 'E7 daddy',
+        name: "Fruits Basket",
+        description: 'Play',
     },
     pinataOptions: {
         cidVersion: 0
@@ -29,8 +29,6 @@ pinata.pinFileToIPFS(readableStreamForFile, options).then((result) => {
     return setIFSP( String(result.IpfsHash));
     console.log(result);
     console.log(IPFS);
-    console.log(typeof(IPFS));
-    console.log(typeof('Qmdh2Hyymg4jnfMdTEoVzvECXbdkts4AQChjfUP5Z8JUGu'));
 }).then( () => {
     const metadata = {
         image: ("https://gateway.pinata.cloud/" + IPFS),   
