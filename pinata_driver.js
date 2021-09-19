@@ -8,10 +8,10 @@ pinata.testAuthentication().then((result) => {
     console.log(err);
 });
 const fs = require('fs');
-const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/image (9).png');
+const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/image (8).png');
 const options = {
     pinataMetadata: {
-        name: "Chamath",
+        name: "Chamath_why",
         description: 'E7 daddy',
     },
     pinataOptions: {
@@ -21,26 +21,28 @@ const options = {
 var IPFS;
 pinata.pinFileToIPFS(readableStreamForFile, options).then((result) => {
     //handle results here
-    IPFS = result;
+    IPFS = String(result.IpfsHash);
     console.log(result);
+    console.log(IPFS);
+    console.log(typeof(IPFS));
+    console.log(typeof('Qmdh2Hyymg4jnfMdTEoVzvECXbdkts4AQChjfUP5Z8JUGu'));
 }).catch((err) => {
     //handle error here
     console.log(err);
 });
 
 const metadata = {
-    name: 'G5_Adapted',
-    description: '3 Phase DC/AC Inverter for SVPWM',
-    image: ('https://gateway.pinata.cloud/'+IPFS),    
+    image: ("https://gateway.pinata.cloud/" + IPFS),   
 };
-pinata.hashMetadata('QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW', metadata).then((result) => {
+console.log(metadata.image);
+/*
+pinata.hashMetadata(IPFS, metadata).then((result) => {
     //handle results here
     console.log(result);
 }).catch((err) => {
     //handle error here
     console.log(err);
 });
-/*
 const options = {
     pinataMetadata: {
         name: 'G5_Adapted.json',
