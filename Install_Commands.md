@@ -14,6 +14,5 @@ Before running this repo, you must perform the following:
 12. In the project directory, run `npx hardhat run scripts/deploy.js --network ropsten`
 13. In the project directory, run `npm install @alch/alchemy-web3`
 14. In the project directory, run `node scripts/mint-nft.js`
-15. In the project directory, run `node scripts/mint-nft.js`
 
 You should be done!
