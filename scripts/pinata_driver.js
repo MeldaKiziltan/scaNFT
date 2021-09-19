@@ -56,7 +56,7 @@ function setIPFS (IpfsHash)
     IPFS = IpfsHash;
 }
 const fs = require('fs');
-const readableStreamForFile = fs.createReadStream('C:\\Users\\User\\OneDrive - University of Waterloo\\Pictures\\WEC.png');
+const readableStreamForFile = fs.createReadStream('C:\\Users\\User\\OneDrive - University of Waterloo\\Pictures\\patchDesign.png');
 const options = {
     pinataMetadata: {
         name: "Tesla Bottie",
