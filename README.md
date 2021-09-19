@@ -20,7 +20,7 @@ Once the button is pressed, the **RasberryPi** instructs the table to move and t
 2. Press button
 3. RasberryPi performs its tasks, rotating the table and taking pictures
 4. Pictures are uploaded to 3DF Zephyr and meshed to create a 3D image
-5. This image is saved at a `.glb` file which is them uploaded to pinata via the Pinata SDK
+5. This image is saved at a `.glb` file which is them uploaded to Pinata via the Pinata SDK
 6. The CID from the uploaded file is taken and put in the `nft_metadata.json` file
 7. `nft_metadata.json` is then uploaded to Pinata and the CID is taken once again
 8. Placed in `mint-nft.js`
