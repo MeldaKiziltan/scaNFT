@@ -3,3 +3,5 @@ artifacts/
 cache/
 *package-lock.json
 *package.json
+*glb_metadata_nft.json
+*nft-metadata.json
