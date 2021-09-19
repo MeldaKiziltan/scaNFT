@@ -7,12 +7,13 @@ pinata.testAuthentication().then((result) => {
     //handle error here
     console.log(err);
 });
-/*
 const fs = require('fs');
 const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/g5 adapted render.jpeg');
 const options = {
     pinataMetadata: {
         name: "G5_Adapted",
+        description: '3 Phase DC/AC Inverter for SVPWM',
+        image: ('https://gateway.pinata.cloud/ipfs/QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW'),    
         keyvalues: {
             customKey: '100',
             customKey2: '3'
@@ -31,7 +32,7 @@ pinata.pinFileToIPFS(readableStreamForFile, options).then((result) => {
     //handle error here
     console.log(err);
 });
-
+/*
 const metadata = {
     name: 'G5_Adapted',
     description: '3 Phase DC/AC Inverter for SVPWM',
@@ -50,7 +51,6 @@ pinata.hashMetadata('QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW', metadata).
     //handle error here
     console.log(err);
 });
-*/
 
 const options = {
     pinataMetadata: {
@@ -75,5 +75,6 @@ pinata.pinJSONToIPFS(body, options).then((result) => {
     //handle error here
     console.log(err);
 });
+*/
 
 console.log ("works");
