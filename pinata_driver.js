@@ -32,11 +32,11 @@ pinata.pinFileToIPFS(readableStreamForFile, options).then((result) => {
     //handle error here
     console.log(err);
 });
-/*
+
 const metadata = {
     name: 'G5_Adapted',
     description: '3 Phase DC/AC Inverter for SVPWM',
-    image: ('https://gateway.pinata.cloud/ipfs/QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW'),
+    image: ('https://gateway.pinata.cloud/'+IPFS),
     keyvalues: {
         newKey: '100',
         existingKey: '3',
@@ -51,7 +51,7 @@ pinata.hashMetadata('QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW', metadata).
     //handle error here
     console.log(err);
 });
-
+/*
 const options = {
     pinataMetadata: {
         name: 'G5_Adapted.json',
