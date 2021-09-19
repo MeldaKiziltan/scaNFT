@@ -39,4 +39,4 @@ async function mintNFT(tokenURI) {
   }
 
   //The link to the nft metadata
-  mintNFT("https://gateway.pinata.cloud/ipfs/QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW"); //current NFT: G5_Adapted
+  mintNFT("https://gateway.pinata.cloud/ipfs/QmUH2raovQ7pxWv534fSEPpNW9XPQjCqXQUWeP9KMyuxaW"); //current NFT: G5_Adapted, CID for the actually NFT
