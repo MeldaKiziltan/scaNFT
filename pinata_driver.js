@@ -1,5 +1,7 @@
 const pinataSDK = require('/Users/shabana/node_modules/@pinata/sdk');
 const pinata = pinataSDK('877ae951bf1596ff167b', '541a0d30041eeb1e3fc7d65a11215bbff08cd791f358b80cf85b747636447ef1');
+var IPFS;
+
 pinata.testAuthentication().then((result) => {
     //handle successful authentication here
     console.log(result);
@@ -7,6 +9,10 @@ pinata.testAuthentication().then((result) => {
     //handle error here
     console.log(err);
 });
+function setIFSP (IpfsHash)
+{
+    IPFS = IpfsHash;
+}
 const fs = require('fs');
 const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/image (8).png');
 const options = {
@@ -18,23 +24,32 @@ const options = {
         cidVersion: 0
     }
 };
-var IPFS;
 pinata.pinFileToIPFS(readableStreamForFile, options).then((result) => {
     //handle results here
-    IPFS = String(result.IpfsHash);
+    return setIFSP( String(result.IpfsHash));
     console.log(result);
     console.log(IPFS);
     console.log(typeof(IPFS));
     console.log(typeof('Qmdh2Hyymg4jnfMdTEoVzvECXbdkts4AQChjfUP5Z8JUGu'));
+}).then( () => {
+    const metadata = {
+        image: ("https://gateway.pinata.cloud/" + IPFS),   
+    };
+    console.log(metadata.image);
+
+    pinata.hashMetadata(IPFS, metadata).then((result) => {
+        //handle results here
+        console.log(result);
+    }).catch((err) => {
+        //handle error here
+        console.log(err);
+    });
+    
 }).catch((err) => {
     //handle error here
     console.log(err);
 });
 
-const metadata = {
-    image: ("https://gateway.pinata.cloud/" + IPFS),   
-};
-console.log(metadata.image);
 /*
 pinata.hashMetadata(IPFS, metadata).then((result) => {
     //handle results here
