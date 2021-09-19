@@ -7,7 +7,7 @@ Before running this repo, you must perform the following:
 5. Answer the questions as you like and press `Enter` to move onto the next until you get to end
 6. In the project directory, run `npm install --save-dev hardhat`
 7. In the project directory, run `npx hardhat` and use the arrow keys to select `Create an empty hardhat.config.js`
-8. Navigate to the `Contracts` folder and run `npm install @openzeppelin/contracts@3.1.0-solc-0.7`
+8. Navigate to the `contracts` folder and run `npm install @openzeppelin/contracts@3.1.0-solc-0.7`
 9. In the project directory, run `npm install dotenv --save`
 10. In the project directory, run `npm install --save-dev @nomiclabs/hardhat-ethers "ethers@^5.0.0"`
 11. In the project directory, run `npx hardhat compile`
