@@ -1,4 +1,4 @@
-const pinataSDK = require('/Users/shabana/node_modules/@pinata/sdk');
+const pinataSDK = require('C:\\Users\\User\\node_modules\\@pinata\\sdk');
 const pinata = pinataSDK('877ae951bf1596ff167b', '541a0d30041eeb1e3fc7d65a11215bbff08cd791f358b80cf85b747636447ef1');
 var IPFS;
 
@@ -56,10 +56,10 @@ function setIPFS (IpfsHash)
     IPFS = IpfsHash;
 }
 const fs = require('fs');
-const readableStreamForFile = fs.createReadStream('/Users/shabana/Downloads/backup_HTN_idea.png');
+const readableStreamForFile = fs.createReadStream('C:\\Users\\User\\OneDrive - University of Waterloo\\Pictures\\WEC.png');
 const options = {
     pinataMetadata: {
-        name: "Tesla Bot",
+        name: "Tesla Bottie",
         description: 'The humanoid robot that Tesla unveiled that their AI Day event',
     },
     pinataOptions: {
