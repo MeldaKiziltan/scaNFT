@@ -56,11 +56,11 @@ function setIPFS (IpfsHash)
     IPFS = IpfsHash;
 }
 const fs = require('fs');
-const readableStreamForFile = fs.createReadStream('C:\\Users\\User\\OneDrive - University of Waterloo\\Pictures\\patchDesign.png');
+const readableStreamForFile = fs.createReadStream('C:\\Users\\User\\OneDrive - University of Waterloo\\Pictures\\Textured_mesh_2.glb');
 const options = {
     pinataMetadata: {
-        name: "Tesla Bottie",
-        description: 'The humanoid robot that Tesla unveiled that their AI Day event',
+        name: "GLB NFT",
+        description: '3D Scan',
     },
     pinataOptions: {
         cidVersion: 0
