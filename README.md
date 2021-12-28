@@ -52,3 +52,8 @@ So much! Everything we did here, we had never done before and had no idea how to
 - 3D Printing parts
 - Adding prices to NFTs
 - Creating a frontend for the user
+
+## scaNFT in the news!
+Check out the following articles about scaNFT:
+- [Raspberry Pi: Raspberry Pi project wins North America’s largest hackathon](https://www.raspberrypi.com/news/raspberry-pi-project-wins-north-americas-largest-hackathon/)
+- [Pinata: Student led project, scaNFT, wins Hack the North and paves way for NFTs](https://www.pinata.cloud/blog/powered-by-pinata-student-led-project-scanft-wins-hack-the-north-and-paves-way-for-nfts)
